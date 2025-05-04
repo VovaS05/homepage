@@ -86,9 +86,19 @@ h2 {
     text-decoration: underline;
 }
 
-/* Стилі для секцій */
 .skills,
 .languages,
 .about-me {
     margin-bottom: 20px;
+}
+.about-me {
+    margin-bottom: 30px; 
+}
+
+.about-me-content {
+    line-height: 1.8; 
+}
+
+.about-me-content p {
+    margin-bottom: 15px; 
 }
