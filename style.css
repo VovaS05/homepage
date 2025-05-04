@@ -123,3 +123,19 @@ h2 {
     padding: 8px 12px; 
     border-radius: 5px; 
 }
+.languages {
+    margin-bottom: 30px; 
+}
+
+.languages h2 {
+    margin-bottom: 20px; 
+}
+
+.languages-list {
+    list-style: none; 
+    padding: 0;
+}
+
+.languages-list li {
+    margin-bottom: 10px; 
+}
