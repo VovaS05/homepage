@@ -102,3 +102,24 @@ h2 {
 .about-me-content p {
     margin-bottom: 15px; 
 }
+.skills {
+    margin-bottom: 30px; 
+}
+
+.skills h2 {
+    margin-bottom: 20px; 
+}
+
+.skills-list {
+    list-style: none; 
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    grid-gap: 10px; 
+}
+
+.skills-list li {
+    background-color: #e0e0e0; 
+    padding: 8px 12px; 
+    border-radius: 5px; 
+}
