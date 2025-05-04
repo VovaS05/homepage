@@ -2,46 +2,27 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
+    background-color: #414141;
+    color: #2b2b2b;
     line-height: 1.6;
 }
 
 .container {
     max-width: 960px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #605e61;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: grid;
     grid-template-columns: 300px 1fr;
-    grid-gap: 20px;
+    grid-gap: 40px;
     padding: 20px;
-}
-
-h1,
-h2,
-h3 {
-    color: #1a237e;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-h1 {
-    font-size: 2.5em;
-}
-
-h2 {
-    font-size: 1.8em;
-    border-bottom: 2px solid #1a237e;
-    padding-bottom: 5px;
-    margin-top: 20px;
 }
 
 .header {
     text-align: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 2px dashed #1d1d1d;
+    border-right: 2px dashed #1d1d1d;
 }
 
 .main {
@@ -51,9 +32,12 @@ h2 {
 }
 
 .footer {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    border: thick double #343636;
+    grid-column: 1 / -1;
 }
 
 .left-column {
@@ -64,17 +48,23 @@ h2 {
     grid-column: 2 / 3;
 }
 
+.contact-info {
+    margin-bottom: 20px; 
+}
+
 .contact-info h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    color: #202020; 
 }
 
 .contact-info p {
     font-size: 1.1em;
 }
 
-.contact-info i {
+.contact-info li {
     margin-right: 5px;
+    color: #555; 
 }
 
 .contact-info a {
@@ -84,58 +74,57 @@ h2 {
 
 .contact-info a:hover {
     text-decoration: underline;
+    color: #000000; 
 }
 
 .skills,
 .languages,
 .about-me {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
-.about-me {
-    margin-bottom: 30px; 
+
+.skills h2,
+.languages h2,
+.about-me h2 {
+    color: #28292e;
+    font-size: 1.8em;
+    border-bottom: 2px solid #323441;
+    padding-bottom: 5px;
+    margin-top: 20px;
 }
 
 .about-me-content {
-    line-height: 1.8; 
+    line-height: 1.8;
 }
 
 .about-me-content p {
-    margin-bottom: 15px; 
-}
-.skills {
-    margin-bottom: 30px; 
-}
-
-.skills h2 {
-    margin-bottom: 20px; 
+    margin-bottom: 15px;
 }
 
 .skills-list {
-    list-style: none; 
+    list-style: none;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-    grid-gap: 10px; 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
 }
 
 .skills-list li {
-    background-color: #e0e0e0; 
-    padding: 8px 12px; 
-    border-radius: 5px; 
-}
-.languages {
-    margin-bottom: 30px; 
+    background-color: #555257;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
 }
 
-.languages h2 {
-    margin-bottom: 20px; 
+.skills-list li:hover {
+    background-color: #ccc; 
 }
 
 .languages-list {
-    list-style: none; 
+    list-style: none;
     padding: 0;
 }
 
 .languages-list li {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
